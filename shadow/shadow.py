@@ -65,11 +65,11 @@ matrix = Matrix(2, 2)
 
 while True:
     for num in range(2):
-        new_pos = get_accelerometer()
-        matrix.set_position(new_pos)
-            
         if num == 0:
             matrix.fading()
+
+        new_pos = get_accelerometer()
+        matrix.set_position(new_pos)
 
         matrix.show()
         
